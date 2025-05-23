@@ -1,30 +1,31 @@
-import jabrmaqom from '@public/jabrmaqom.jpg'
-import olmayman from '@public/olmayman.jpg'
-import eraPrimo from '@public/eraPrimo.jpg'
+import jabrmaqom from '@/app/assets/jabrmaqom.jpg'
+import olmayman from '@/app/assets/olmayman.jpg'
+import eraPrimo from '@/app/assets/eraprimo.jpg'
 
 export const comicksInfo = [
     {
-        id:1,
-        comicName:'O`lmayman',
-        page:1,
-        allPage:1,
-        img:olmayman,
-        comicFile:''
+      id: 1,
+      comicName: "O`lmayman",
+      page: 1,
+      allPage: 1,
+      img: '/app/assets/olmayman.jpg', // ✅ Correct path
+      comicFile: "",
     },
     {
-        id:2,
-        comicName:'Jabrmaqom',
-        page:10,
-        allPage:'?',
-        img:jabrmaqom,
-        comicFile:''
+      id: 2,
+      comicName: "Jabrmaqom",
+      page: 10,
+      allPage: "?",
+      img: jabrmaqom, // ✅ Correct path
+      comicFile: "",
     },
     {
-        id:3,
-        comicName:'Era Primo',
-        page:1,
-        allPage:'?',
-        img:eraPrimo,
-        comicFile:''
+      id: 3,
+      comicName: "Era Primo",
+      page: 1,
+      allPage: "?",
+      img: eraPrimo, // ✅ Correct path
+      comicFile: "",
     },
-]
+  ];
+  
