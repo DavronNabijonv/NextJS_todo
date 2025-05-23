@@ -8,14 +8,14 @@ export const comicksInfo = [
       comicName: "O`lmayman",
       page: 1,
       allPage: 1,
-      img: '/app/assets/olmayman.jpg', // ✅ Correct path
+      img: olmayman, // ✅ Correct path
       comicFile: "",
     },
     {
       id: 2,
       comicName: "Jabrmaqom",
       page: 10,
-      allPage: "?",
+      allPage: null,
       img: jabrmaqom, // ✅ Correct path
       comicFile: "",
     },
@@ -23,7 +23,7 @@ export const comicksInfo = [
       id: 3,
       comicName: "Era Primo",
       page: 1,
-      allPage: "?",
+      allPage: null,
       img: eraPrimo, // ✅ Correct path
       comicFile: "",
     },
