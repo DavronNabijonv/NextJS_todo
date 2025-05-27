@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,15 +20,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params:{locale},
 }: Readonly<{
-  children: React.ReactNode;
+children: React.ReactNode;
+params:{locale:string}
 }>) {
+
+  const messages = useMessages();
+
   return (
-    <html lang="en" className="bg-[#0d0d0d]" >
+    <html lang="en" className="bg-[#0d0d0d]">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        {children}
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
