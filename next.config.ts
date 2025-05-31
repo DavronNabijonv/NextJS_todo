@@ -1,8 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    serverActions: true,
-  },
-};
+import withNextIntl from 'next-intl/plugin';
 
-module.exports = nextConfig;
+const withIntl = withNextIntl('./next-intl.config.ts');
+
+export default withIntl({});

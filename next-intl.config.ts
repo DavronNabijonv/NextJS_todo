@@ -1,3 +1,8 @@
-// i18n.ts
-export const locales = ['en', 'uz', 'de'];
+// next-intl.config.ts
+export const locales = ['en', 'uz', 'ru'];
 export const defaultLocale = 'en';
+
+export default {
+  locales,
+  defaultLocale
+};
