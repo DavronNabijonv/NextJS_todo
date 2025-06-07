@@ -1,5 +1,6 @@
-import withNextIntl from 'next-intl/plugin';
+// next.config.js
+const withNextIntl = require('next-intl/plugin')('./next-intl.config.ts');
 
-const withIntl = withNextIntl('./next-intl.config.ts');
-
-export default withIntl({});
+module.exports = withNextIntl({
+  // boshqa configlar nimasdurlar bo`lishi kerak shu jeydda
+});
